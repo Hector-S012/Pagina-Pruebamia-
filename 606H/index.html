@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="seleccion">
+        <h1><span class="icon-users"></span>Curriculum</h1>
+        <center>
+        <div class="card" style="width: 30rem;">
+            <img class="card-img-top" src="img/Soy yo.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Aguilar Rojas Hector Saul</h3>
+              <h3 class="card-text">Grupo: 606</h3>
+              <h3 class="card-text">Turno: Matutino</h3>
+              <h5><p class="card-text">Me encanta el baile salsa, cumbia, bachata, merengue, rock, mi pasatiempo favorito es escuchar musica y dibujar rostros, caricatuas o paisajes de lo que se encuentre en mi alrededor, soy muy alegre me encanta hacer amigos, me gusta ser directo y que sean sinceros conmigo </p></h5>
+              <a href="javascript:imprSelec('seleccion')" class="btn btn-primary">Imprime tus datos</a>
+            </div>
+          </div>
+    </center>
+    </div>
+
+
+
+
+
+
+
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            function imprSelec(nombre) {
+              var ficha = document.getElementById(nombre);
+              var ventimp = window.open(' ', 'popimpr');
+              ventimp.document.write( ficha.innerHTML );
+              ventimp.document.close();
+              ventimp.print( );
+              ventimp.close();
+            }
+            </script>
+</body>
+</html>
